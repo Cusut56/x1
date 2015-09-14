@@ -1,5 +1,5 @@
 //////// What am I trying to do???
-//////// What is my name?  (CST 112; today's date?)
+//////// Tara?  (CST 112; September, 13,2015?)
 
 //// GLOBALS:  coordinates, speed, etc.
 float x, y;       // Position of creature.
@@ -26,13 +26,18 @@ void draw() {
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   
-  /* INSERT YOUR CODE HERE! */
-  triangle( 150,horizon, 120,horizon-50, 180,horizon-50  );  // tree
-  text( "This is NOT a good tree; please fix it!", 150,horizon );
+  
+  triangle( 500,horizon, 600,horizon-30, 200,horizon -100  );  // tree
+  stroke(0);
+  fill(150);
+  rect(590,40,20,110);
                                             // house
 
   fill(0);
-  text( "My name is Mud", 10,height-20 );                                          
+  text( "My name is chuck ",10,height-20 );   
+  
+  
+  
                                             
   //// ACTION:  move (x,y) coordinates.
   x=  x + dx;
@@ -40,9 +45,12 @@ void draw() {
   
   //// SHOW:  display the creature at (x,y)
 
-  /* INSERT YOUR CODE HERE! */
-  fill(255,0,0); rect( x,y, 30,50 );        /* REPLACE THIS WITH YOUR OWN CODE! */
-  text( "Fred", x,y );
+ 
+  fill(255,0,0); ellipse( x,y, 30,50 ); 
+  stroke(180);
+  line(x,y,30,50);
+
+  text( "chuck", y,50 );
 
 }
 
@@ -62,5 +70,3 @@ void keyPressed() {
   }
 }
    
-   
-
