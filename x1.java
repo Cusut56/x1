@@ -34,7 +34,7 @@ void draw() {
 
                                             // house
 
-rect(500,100,20,10);
+
 
 
   fill(0);
