@@ -27,11 +27,15 @@ void draw() {
   rect( 0,horizon, width,height*3/4 );      // grass.
   
   
-  triangle( 500,horizon, 600,horizon-30, 200,horizon -100  );  // tree
+  triangle( 500,horizon, 600,horizon-100, 700,horizon -10  );  // tree
   stroke(0);
   fill(150);
   rect(590,40,20,110);
+
                                             // house
+
+rect(500,100,20,10);
+
 
   fill(0);
   text( "My name is chuck ",10,height-20 );   
@@ -69,4 +73,3 @@ void keyPressed() {
     exit();                           // press 'q' key to QUIT.
   }
 }
-   
