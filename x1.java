@@ -29,16 +29,20 @@ void draw() {
   fill( 100,200,100 );
   rect( 0,horizon, width,height*3/4 );      // grass.
   
-  
+   
   triangle( 500,horizon, 600,horizon-100, 700,horizon -10  );  // tree
   stroke(0);
   fill(85);
   rect(590,40,20,110);
 
+
+  
+
                                             // house
 
+
   fill(0);
-  text( "My name is chuck ",10,height-20 );   
+  text( "My name is chuck ",x,y,50,80 );   
   
                                             
   //// ACTION:  move (x,y) coordinates.
@@ -49,7 +53,7 @@ void draw() {
   
   //// SHOW:  display the creature at (x,y)
 
-  ellipse(x,440,y,50);
+  
   fill(255,0,0); 
   rect( x,y, 50,80 );
   fill( 255,200,200 );
@@ -73,7 +77,7 @@ void draw() {
   stroke(80);
 
 
-  text( "chuck", x,50 );
+  
 
 }
 
